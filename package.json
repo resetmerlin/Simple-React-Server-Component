@@ -1,0 +1,36 @@
+{
+  "name": "Simple-React-Server-Component",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "repository": "https://github.com/resetmerlin/Simple-React-Server-Component.git",
+  "author": "resetmerlin <resetmerlin@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint --fix '**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --check . --ignore-path .gitignore !package.json !pnpm-lock.yaml",
+    "format:fix": "prettier --write . --ignore-path .gitignore !package.json !pnpm-lock.yaml"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.7.0",
+    "es-module-lexer": "^1.4.1",
+    "esbuild": "^0.20.0",
+    "hono": "^3.12.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-server-dom-webpack": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.13",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "prettier": "^3.2.4"
+  }
+}
