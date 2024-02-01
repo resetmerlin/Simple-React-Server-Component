@@ -354,6 +354,11 @@ acorn-jsx@^5.3.2:
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
   integrity sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==
 
+acorn@^6.2.1:
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.2.tgz#35866fd710528e92de10cf06016498e47e39e1e6"
+  integrity sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==
+
 acorn@^8.9.0:
   version "8.11.3"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.11.3.tgz#71e0b14e13a4ec160724b38fb7b0f233b1b81d7a"
@@ -1585,6 +1590,11 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+neo-async@^2.6.1:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
+  integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+
 node-releases@^2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.14.tgz#2ffb053bceb8b2be8495ece1ab6ce600c4461b0b"
@@ -1798,28 +1808,32 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-dom@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
-  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
+react-dom@18.3.0-next-3706edb81-20230308:
+  version "18.3.0-next-3706edb81-20230308"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.0-next-3706edb81-20230308.tgz#27e692de505d47868ddfcd136868b214bba76c1a"
+  integrity sha512-/dmOoCPVy8n7ed1HkuV2jhkuSsXUgWCnHJzl/XUTzUiQs1AxAGrQfT5ykRDpVyZmmVT3KjHWmkdFBH7ySlPYZw==
   dependencies:
     loose-envify "^1.1.0"
-    scheduler "^0.23.0"
+    scheduler "0.24.0-next-3706edb81-20230308"
 
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-server-dom-webpack@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/react-server-dom-webpack/-/react-server-dom-webpack-0.0.1.tgz#385f0c886b5c014601dcda9754b37702fcdff183"
-  integrity sha512-XLR1T3SxiYe5CePB7apZg91V7zJqp55rAj1wb1rD0VQc8eA/Tt1mhCXaDKvUnLAxiOqUgRapl9CA3eud0UhEvg==
+react-server-dom-webpack@0.0.0-experimental-41b4714f1-20230328:
+  version "0.0.0-experimental-41b4714f1-20230328"
+  resolved "https://registry.yarnpkg.com/react-server-dom-webpack/-/react-server-dom-webpack-0.0.0-experimental-41b4714f1-20230328.tgz#b01fc25b2b73224bfdab9d7946327bf1dd32bcea"
+  integrity sha512-ERqlZNZB9VsJICbjiC24Rwb5eBEk2GoMA6G0WdQEN5XPW8kSLvLEnE0CGZdwitC1iTILkdVEMEyYHAFVue05Iw==
+  dependencies:
+    acorn "^6.2.1"
+    loose-envify "^1.1.0"
+    neo-async "^2.6.1"
 
-react@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+react@18.3.0-next-3706edb81-20230308:
+  version "18.3.0-next-3706edb81-20230308"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.0-next-3706edb81-20230308.tgz#cbadc3e6da61dec15665cc82806df46960ce92bb"
+  integrity sha512-alG7ODnlIURG6b6jA+FTUV3zkxX1qz8+uXQNc4OABKG7ds+r+SvD9bdNC3eH6FJCw2QjSUhTRU8Tmf5OkZpdwQ==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -1936,10 +1950,10 @@ safe-regex-test@^1.0.0:
     get-intrinsic "^1.2.2"
     is-regex "^1.1.4"
 
-scheduler@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
-  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
+scheduler@0.24.0-next-3706edb81-20230308:
+  version "0.24.0-next-3706edb81-20230308"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.24.0-next-3706edb81-20230308.tgz#36864851e8db0c64d7f9c568a40f224155b768d2"
+  integrity sha512-KXiw/i2R2ERsp4I+jVSj2Jh7hwzdZWriaaVuKJ/lH9+Sh4j2rN6Ii6+EDiwQjxsP1SCCRs75BpkcXhoYlQ2F9w==
   dependencies:
     loose-envify "^1.1.0"
 
